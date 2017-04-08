@@ -1,0 +1,40 @@
+﻿<Window x:Class="HR_project.AddEmployeeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HR_project"
+        mc:Ignorable="d"
+        Title="AddEmployeeWindow" Height="340" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <TextBlock Margin="5">Фамилия:</TextBlock>
+            <TextBox x:Name="newEmSurname" Margin="47,2,46.333,2" Height="30"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1">
+            <TextBlock Margin="5">Имя:</TextBlock>
+            <TextBox Name="newEmName" Margin="46,2,47.333,2" Height="30"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2">
+            <TextBlock Margin="5">Год рождения:</TextBlock>
+            <TextBox Name="newEmBirthyear" Margin="44,2,46.333,2" Height="30"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3">
+            <TextBlock Margin="5">Должность:</TextBlock>
+            <TextBox Name="newEmPost" Margin="43,2,46.333,2" Height="30"></TextBox>
+        </StackPanel>
+
+        <Button Name="addEm" Grid.Row="4" Margin="15" Click="addEm_Click">Добавить</Button>
+    </Grid>
+</Window>
